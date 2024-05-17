@@ -1,0 +1,108 @@
+ul{
+    margin: 0;
+    padding: 0;
+}
+ul li{
+    list-style: none;
+    cursor: pointer;
+    font-size: 40px;
+}
+span{
+    cursor: pointer;
+}
+div.parent{
+    position: relative;
+    display: grid;
+    background-color:rgb(100, 46, 20);
+    grid-template-columns: 300px repeat(2,100px);
+    grid-template-rows: 302px 98px;
+    width: fit-content;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    height: 400px;
+}
+div.first{
+    display: grid;
+}
+div.first ul{
+    display: grid;
+    grid-template-columns: repeat(3,98px);
+    grid-template-rows: repeat(3,98px);
+}
+div.first ul li{
+    display: grid;
+    background-color:lawngreen;
+    margin-left:calc(12px / 3);
+    margin-top: calc(5px);
+    justify-content: center;
+    align-items: center;
+}
+div.four{
+    display: flex;
+}
+div.four span:first-child{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    width: 86px;
+    background-color:aqua;
+    margin-left: 6px;
+}
+div.four span:nth-child(2){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    background-color:gold;
+    width:60px;
+    margin-left: 6px;
+}
+div.four span:last-child{
+    margin-left: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    width:195px;
+    background-color: red;
+}
+div.second{
+    display: grid;
+}
+div.second ul{
+    display: grid;
+    grid-template-columns:95px;
+    grid-template-rows:repeat(4,100px);
+}
+div.second ul li{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    background-color: blue;
+    margin-top: 4px;
+    
+}
+div.third{
+    display: grid;
+    grid-template-columns:95px;
+    grid-template-rows:repeat(2,200px);
+}
+div.third span{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    background-color: yellow;
+    margin-top: 5px;
+    font-size: 40px;
+}
+div.third span:first-child{
+background-color:aqua;
+}
+div input{
+    border-color: black;
+    width: 490px;
+    margin-left: 50%;
+    height: 50px;
+    transform: translateX(-50%);
+}
